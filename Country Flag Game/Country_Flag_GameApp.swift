@@ -11,7 +11,7 @@ import SwiftUI
 struct Country_Flag_GameApp: App {
     var body: some Scene {
         WindowGroup {
-            QuestionView()
+            ContentView()
         }
     }
 }
