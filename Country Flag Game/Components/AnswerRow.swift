@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AnswerRow: View {
     var answer: Answer
+    @EnvironmentObject var quizManager: QuizManager
     @State private var isSelected = false
     
     var body: some View {
@@ -30,7 +31,10 @@ struct AnswerRow: View {
             .cornerRadius(10)
             .shadow(color: isSelected ? (answer.isCorrect ? .green : .red) : .gray, radius: 5, x: 0.5, y: 0.5)
             .onTapGesture {
-                isSelected = true
+                if !quizManager.answerSelected {
+                    isSelected = true
+                    quizManager.selectAnswer(answer: answer)
+                }
             }
     }
 }
