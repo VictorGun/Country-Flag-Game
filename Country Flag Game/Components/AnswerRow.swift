@@ -25,7 +25,7 @@ struct AnswerRow: View {
             }
         }
             .padding()
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(maxWidth: 300, alignment: .leading)
             .background(.white)
             .cornerRadius(10)
             .shadow(color: isSelected ? (answer.isCorrect ? .green : .red) : .gray, radius: 5, x: 0.5, y: 0.5)
