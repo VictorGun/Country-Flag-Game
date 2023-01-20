@@ -69,8 +69,8 @@
 		400743CC2976F7DF002A2EEB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				400743D52976FDE3002A2EEB /* QuestionView.swift */,
 				400743DB29784D2B002A2EEB /* ContentView.swift */,
+				400743D52976FDE3002A2EEB /* QuestionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

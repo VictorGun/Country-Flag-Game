@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuestionView: View {
-    @EnvironmentObject var quizManager: QuizManager
+    @EnvironmentObject var quizManager : QuizManager
     var body: some View {
         if quizManager.playingGame {
             VStack(spacing: 20) {
@@ -41,7 +41,8 @@ struct QuestionView: View {
             }
             .padding()
             .background(.cyan)
-        } else {
+        }
+        else {
             VStack(spacing: 20) {
                 Text("Country Flag Quiz")
                     .font(.title)
@@ -50,7 +51,7 @@ struct QuestionView: View {
                 Button {
                     quizManager.reset()
                 } label: {
-                     CustomButton(text: "Play Again")
+                    CustomButton(text: "Play Again")
                 }
             }
             .foregroundColor(.yellow)
@@ -63,6 +64,6 @@ struct QuestionView: View {
 
 struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        QuestionView()
+        QuestionView().environmentObject(QuizManager())
     }
 }

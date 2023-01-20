@@ -12,23 +12,25 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 40) {
-                Text("Country Flag Game")
-                    .font(.title)
-                    .fontWeight(.heavy)
-                    .foregroundColor(.yellow)
-                Text("Ready to test your skillz?")
-                    .foregroundColor(.yellow)
+                VStack(spacing: 20) {
+                    Text("Country Flag Game")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.yellow)
+                    Text("Ready to test your skilz?")
+                        .foregroundColor(.yellow)
+                }
+                NavigationLink {
+                    QuestionView()
+                        .environmentObject(quizManager)
+                } label: {
+                    CustomButton(text: "Start")
+                }
             }
-            NavigationLink {
-                QuestionView()
-                    .environmentObject(quizManager)
-            } label: {
-                CustomButton(text: "Start")
-            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .ignoresSafeArea(.all)
+            .background(.cyan)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .ignoresSafeArea(.all)
-        .background(.cyan)
     }
 }
 
