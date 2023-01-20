@@ -9,6 +9,56 @@ import Foundation
 
 struct Data {
     let questions = [
+        
+        // Extra 5
+        
+        Question(correctAnswer:
+                Answer(text: "Canada", isCorrect: true),
+              incorrectAnswers: [
+                Answer(text: "Sweeden", isCorrect: false),
+                Answer(text: "Switzerland", isCorrect: false),
+                Answer(text: "Norway", isCorrect: false)
+              ])
+        ,
+        
+        Question(correctAnswer:
+                Answer(text: "Cambodia", isCorrect: true),
+              incorrectAnswers: [
+                Answer(text: "Peru", isCorrect: false),
+                Answer(text: "Germany", isCorrect: false),
+                Answer(text: "Nambia", isCorrect: false)
+              ])
+        ,
+        
+        Question(correctAnswer:
+                Answer(text: "Brazil", isCorrect: true),
+              incorrectAnswers: [
+                Answer(text: "France", isCorrect: false),
+                Answer(text: "Portugal", isCorrect: false),
+                Answer(text: "Lithuania", isCorrect: false)
+              ])
+        ,
+        
+        Question(correctAnswer:
+                Answer(text: "Barbados", isCorrect: true),
+              incorrectAnswers: [
+                Answer(text: "Finland", isCorrect: false),
+                Answer(text: "Egypt", isCorrect: false),
+                Answer(text: "El Salvador", isCorrect: false)
+              ])
+        ,
+        
+        Question(correctAnswer:
+                Answer(text: "Argentina", isCorrect: true),
+              incorrectAnswers: [
+                Answer(text: "Sweden", isCorrect: false),
+                Answer(text: "Latvia", isCorrect: false),
+                Answer(text: "Iran", isCorrect: false)
+              ])
+        ,
+        
+        //
+        
         Question(correctAnswer:
                 Answer(text: "Estonia", isCorrect: true),
               incorrectAnswers: [
